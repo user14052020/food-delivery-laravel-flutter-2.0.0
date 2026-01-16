@@ -16,6 +16,9 @@ Only the Laravel admin panel is dockerized here, as requested.
 
 ## Laravel admin panel in Docker
 
+<img width="1915" height="1184" alt="Screenshot 2026-01-16 at 19 36 44" src="https://github.com/user-attachments/assets/7321fddb-f5c4-43e0-acc2-e6dc4037f76d" />
+
+
 Docker files are located inside `laravel_application/`:
 
 - `laravel_application/docker-compose.yml`
@@ -68,6 +71,8 @@ docker compose exec app php artisan migrate:fresh --seed
   ```
 
 ## Flutter app (local run)
+
+<img width="1280" height="720" alt="Screenshot" src="https://github.com/user-attachments/assets/4eaeae1d-7eab-4d0a-a498-6c844528e4fe" />
 
 The Flutter app is not dockerized in this setup. Run it normally:
 
