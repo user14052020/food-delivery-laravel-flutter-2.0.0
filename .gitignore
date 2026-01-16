@@ -1,0 +1,14 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+flutter_application/.dart_tool/
+flutter_application/.packages
+flutter_application/.flutter-plugins
+flutter_application/.flutter-plugins-dependencies
+flutter_application/build/
+flutter_application/.idea/
+flutter_application/.vscode/
+
+laravel_application/.idea/
+laravel_application/.vscode/
