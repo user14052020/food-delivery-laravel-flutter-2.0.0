@@ -33,7 +33,6 @@ Docker files are located inside `laravel_application/`:
 cd laravel_application
 docker compose up -d --build
 docker compose exec app php artisan key:generate
-docker compose exec app php artisan migrate --seed
 ```
 
 Open:
@@ -41,7 +40,12 @@ Open:
 
 ### Database import behavior
 
-The initial data is seeded from `database/seeds`.
+On first container start (when the `migrations` table is missing), the DB is rebuilt and `database/seeds/DatabaseSeeder.php` runs automatically.
+If you ever see "table doesn't exist" errors, run a fresh rebuild:
+```bash
+cd laravel_application
+docker compose exec app php artisan migrate:fresh --seed
+```
 If you need a fresh seed run:
 
 ```bash
